@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4537976d-ce55-4fb8-9cab-9f1a6d423e40" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/test/java/Checkboxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/test/java/Checkboxes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/test/java/Datepicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/test/java/Datepicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/test/java/DragAndDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/test/java/DragAndDrop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +47,7 @@
   "keyToString": {
     "Application.Checkboxes.executor": "Run",
     "Application.Datepicker.executor": "Run",
+    "Application.DragAndDrop.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Iaroslava__Finta",
@@ -56,7 +55,7 @@
     "last_opened_file_path": "/Users/Iaroslava/Documents/TechnicalAcademy/Automation/automationlecture2/automationlecture2"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Datepicker">
+  <component name="RunManager" selected="Application.DragAndDrop">
     <configuration name="Checkboxes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Checkboxes" />
       <module name="untitled" />
@@ -71,8 +70,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileUpload" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FileUpload" />
+    <configuration name="DragAndDrop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DragAndDrop" />
       <module name="untitled" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DragAndDrop" />
         <item itemvalue="Application.Datepicker" />
         <item itemvalue="Application.Checkboxes" />
         <item itemvalue="Application.Modal" />
         <item itemvalue="Application.KeyboardInput" />
-        <item itemvalue="Application.FileUpload" />
       </list>
     </recent_temporary>
   </component>

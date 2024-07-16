@@ -9,7 +9,7 @@ public class DragAndDrop {
 
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "/Users/EvgenyShashkov/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/Iaroslava/Downloads/chromedriver-mac-arm64/chromedriver");
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://formy-project.herokuapp.com/dragdrop");
@@ -19,7 +19,7 @@ public class DragAndDrop {
 
         Actions actions = new Actions(driver);
         actions.dragAndDrop(picture,box).build().perform();
-        Thread.sleep(4000);
+        Thread.sleep(3000);
 
         driver.quit();
     }
