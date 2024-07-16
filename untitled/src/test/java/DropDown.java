@@ -9,7 +9,7 @@ public class DropDown {
 
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "/Users/EvgenyShashkov/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/Iaroslava/Downloads/chromedriver-mac-arm64/chromedriver");
 
         WebDriver driver = new ChromeDriver();
 
@@ -17,6 +17,8 @@ public class DropDown {
 
         WebElement dropDownButton = driver.findElement(By.xpath("/html/body/div/div/button"));
         dropDownButton.click();
+
+        Thread.sleep(3000);
 
         WebElement checkbox = driver.findElement(By.xpath("/html/body/div/div/div/a[3]"));
         checkbox.click();
