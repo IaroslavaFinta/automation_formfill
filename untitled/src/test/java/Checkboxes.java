@@ -15,14 +15,15 @@ public class Checkboxes {
 
         WebElement checkbox1 = driver.findElement(By.id("checkbox-1"));
         checkbox1.click();
+        Thread.sleep(2000);
 
         WebElement checkbox2 = driver.findElement(By.id("checkbox-2"));
         checkbox2.click();
+        Thread.sleep(2000);
 
         WebElement checkbox3 = driver.findElement(By.id("checkbox-3"));
         checkbox3.click();
-
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         driver.quit();
     }

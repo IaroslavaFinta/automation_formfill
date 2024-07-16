@@ -8,7 +8,7 @@ public class Datepicker {
 
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "/Users/EvgenyShashkov/Downloads/QAschool/Drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/Iaroslava/Downloads/chromedriver-mac-arm64/chromedriver");
 
         WebDriver driver = new ChromeDriver();
 
@@ -16,11 +16,13 @@ public class Datepicker {
 
         WebElement datepicker = driver.findElement(By.id("datepicker"));
 
-        datepicker.sendKeys("04/03/2024");
+        datepicker.sendKeys("07/15/2024");
+        Thread.sleep(2000);
 
-//        datepicker.sendKeys(Keys.RETURN);
-        datepicker.sendKeys(Keys.ENTER);
+      datepicker.sendKeys(Keys.ENTER);
 
+// submit doesn't work because it doesn't understand that method
+//        datepicker.submit();
         Thread.sleep(3000);
 
         driver.quit();
