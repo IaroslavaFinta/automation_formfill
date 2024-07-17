@@ -7,14 +7,14 @@ public class FileUpload {
 
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "/Users/EvgenyShashkov/Downloads/QAschool/Drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/Iaroslava/Downloads/chromedriver-mac-arm64/chromedriver");
 
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://formy-project.herokuapp.com/fileupload");
 
         WebElement fileUploadField = driver.findElement(By.id("file-upload-field"));
-        fileUploadField.sendKeys("/Users/EvgenyShashkov/Downloads/fileForUploading.png");
+        fileUploadField.sendKeys("male-graphic-designer-working-big-design-studio-his-big-monitor_962751-3390.jpg");
 
         Thread.sleep(3000);
 
