@@ -22,6 +22,7 @@ public class Datepicker {
       datepicker.sendKeys(Keys.ENTER);
 
 // submit doesn't work because it doesn't understand that method
+//        comment for understanding
 //        datepicker.submit();
         Thread.sleep(3000);
 

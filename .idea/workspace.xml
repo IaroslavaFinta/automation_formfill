@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4537976d-ce55-4fb8-9cab-9f1a6d423e40" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/test/java/FileUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/test/java/FileUpload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/test/java/Modal.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/test/java/Modal.java" afterDir="false" />
-    </list>
+    <list default="true" id="4537976d-ce55-4fb8-9cab-9f1a6d423e40" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +53,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Iaroslava__Finta",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/Iaroslava/Documents/TechnicalAcademy/Automation/automationlecture2/automationlecture2"
+    "last_opened_file_path": "/Users/Iaroslava/Documents/TechnicalAcademy/Automation/automationlecture2"
   }
 }]]></component>
   <component name="RunManager" selected="Application.CompleteWebForm">
