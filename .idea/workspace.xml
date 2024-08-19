@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4537976d-ce55-4fb8-9cab-9f1a6d423e40" name="Changes" comment="" />
+    <list default="true" id="4537976d-ce55-4fb8-9cab-9f1a6d423e40" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/test-classes/CompleteWebForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/test-classes/CompleteWebForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/test-classes/Datepicker.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/test-classes/Datepicker.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,21 +45,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Checkboxes.executor": "Run",
-    "Application.CompleteWebForm.executor": "Run",
-    "Application.Datepicker.executor": "Run",
-    "Application.DragAndDrop.executor": "Run",
-    "Application.DropDown.executor": "Run",
-    "Application.FileUpload.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Iaroslava__Finta",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/Iaroslava/Documents/TechnicalAcademy/Automation/automationlecture2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Checkboxes.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CompleteWebForm.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Datepicker.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DragAndDrop.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DropDown.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FileUpload.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Iaroslava__Finta&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/Iaroslava/Documents/TechnicalAcademy/Automation/automationlecture2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.CompleteWebForm">
     <configuration name="CompleteWebForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CompleteWebForm" />
