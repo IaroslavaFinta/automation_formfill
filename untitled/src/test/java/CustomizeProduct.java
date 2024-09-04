@@ -3,6 +3,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -76,22 +77,15 @@ public class CustomizeProduct {
         WebElement addToCart = waitToAdd.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/main/section[1]/div/div/div/div/div/div/div/div[2]/div[2]/div[2]/div/button[4]/span")));
         Thread.sleep(5000);
         addToCart.click();
+        System.out.println("item is in a cart");
 
-        Thread.sleep(5000);
-
-        String pageTextCart = driver.getPageSource();
-        if (pageTextCart.contains("Your cart")){
-            System.out.println("item is in a cart");
-        } else  {
-            System.out.println("test is not working");
-        }
-
-        WebElement checkout = driver.findElement(By.xpath("/html/body/main/div[2]/div/div/div/div/div[2]/button"));
+        WebDriverWait waitForCheckout = new WebDriverWait(driver, 5);
+        WebElement checkout = waitForCheckout.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/main/div[2]/div/div/div/div/div[2]/button")));
         checkout.click();
         System.out.println("checkout button is clicked");
 
-        WebDriverWait waitToFill = new WebDriverWait(driver, 5);
-        WebElement email = waitToFill.until(ExpectedConditions.visibilityOfElementLocated(By.id("email")));
+        WebDriverWait waitForEmail = new WebDriverWait(driver, 5);
+        WebElement email = waitForEmail.until(ExpectedConditions.visibilityOfElementLocated(By.id("email")));
         email.sendKeys("iaroslava.sv7@gmail.com");
         System.out.println("email is entered");
 
@@ -113,33 +107,50 @@ public class CustomizeProduct {
 
         WebElement zipcode = driver.findElement(By.id("TextField4"));
         zipcode.sendKeys("77713");
-        zipcode.sendKeys(Keys.ENTER);
         System.out.println("zipcode is entered");
 
-//        WebElement shippingMethodStandart = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/div/div[1]/div[2]/div[1]/div/main/div/form/div[1]/div[3]/div/section/div/div[2]/section/div/div/div[2]/div/div/div/div/div/div/fieldset/div/div[2]/div/div[1]/input"));
-//        shippingMethodStandart.click();
-//        System.out.println("shipping method is clicked");
+        WebDriverWait waitToShippingMethod = new WebDriverWait(driver, 5);
+        WebElement shippingMethodStandart = waitToShippingMethod.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div[1]/div/div/div[1]/div[2]/div[1]/div/main/div/form/div[1]/div[3]/div/section/div/div[2]/section/div/div/div[2]/div/div/div/div/div/div/fieldset/div/div[2]/div/div[1]/input")));
+        shippingMethodStandart.click();
+        System.out.println("shipping method is clicked");
+
+//        WebElement iframe = driver.findElement(By.id(""));
+//        driver.switchTo().frame(iframe);
+//        System.out.println("switch to iFrame");
+
+//        WebDriverWait waitForCardNumber = new WebDriverWait(driver, 5);
+//        WebElement cardNumber = waitForCardNumber.until(ExpectedConditions.visibilityOfElementLocated(By.id("number")));
+//        cardNumber.sendKeys("1");
+//        System.out.println("card number is entered");
+
+        new Actions(driver).moveToElement(driver.findElement(By.id("number"))).click().sendKeys("1").build().perform();
+        System.out.println("Card Number entered");
+
+        new Actions(driver).moveToElement(driver.findElement(By.id("expiry"))).click().sendKeys("0428").build().perform();
+        System.out.println("Card exp date entered");
+
+        new Actions(driver).moveToElement(driver.findElement(By.id("verification_value"))).click().sendKeys("123").build().perform();
+        System.out.println("Card ver code entered");
+
+//        WebElement cardExpDate = driver.findElement(By.id("expiry"));
+//        cardExpDate.sendKeys("0428");
+//        System.out.println("exp date is entered");
 //
-        WebElement cardNumber = driver.findElement(By.id("number"));
-        cardNumber.sendKeys("1");
-        System.out.println("card number is entered");
+//        WebElement cardCode = driver.findElement(By.id("verification_value"));
+//        cardCode.sendKeys("123");
+//        System.out.println("code is entered");
 
-        WebElement cardExpDate = driver.findElement(By.id("expiry"));
-        cardExpDate.sendKeys("04/28");
-        System.out.println("exp date is entered");
-
-        WebElement cardCode = driver.findElement(By.id("verification_value"));
-        cardCode.sendKeys("123");
-        System.out.println("code is entered");
-
+        Thread.sleep(5000);
         WebDriverWait waitToPayNow = new WebDriverWait(driver, 5);
-        WebElement payButton = waitToPayNow.until(ExpectedConditions.visibilityOfElementLocated(By.id("email")));
+        WebElement payButton = waitToPayNow.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-pay-button")));
         payButton.click();
         System.out.println("button pay now is clicked");
 
+        Thread.sleep(5000);
+
         String pageOrder = driver.getPageSource();
         assertTrue(pageOrder.contains("Your order is confirmed"));
-        System.out.println("order is placed");
+        System.out.println("Order is placed");
 
         driver.quit();
     }
